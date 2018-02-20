@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   
   s.has_rdoc = true
   
-  s.add_dependency('activesupport', '= 2.3.2')
+  s.add_dependency('activesupport', '= 3.0.20')
   s.add_dependency('builder', '= 2.1.2')
   s.add_dependency('braintree', '= 2.0.0')
   
