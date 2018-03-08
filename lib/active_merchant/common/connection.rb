@@ -63,6 +63,8 @@ module ActiveMerchant
               raise ArgumentError, "GET requests do not support a request body" if body
               http.get(endpoint.request_uri, headers)
             when :post
+              debug RUBY_184_POST_HEADERS.merge(headers)
+              debug headers
               debug body
               http.post(endpoint.request_uri, body, RUBY_184_POST_HEADERS.merge(headers))
             else
